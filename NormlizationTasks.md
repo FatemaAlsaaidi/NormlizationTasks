@@ -155,3 +155,22 @@ Solution: seprate multivalue attribute into a new table and remove composite key
 | F002 | QuickData |
 | F003 | SamTech |
 | F003 | WebGo |
+
+## Case 7:  Payment System – UNF Table 
+![Payment System – UNF Table](Images/Case7.JPG)
+Problem: Have multivalue attributes in the table
+Solution: seprate multivalue attributes into a new table and remove transitive dependencies
+| TransactionID  | CustomerName |
+|---|---|
+
+| TransactionID | PaymentMethods |
+|---|---|
+
+| TransactionID | PurchaseItems |
+|---|---|
+
+| TransactionID | BillingAddres |
+|---|---|
+
+| TransactionID | PaymentDetails |
+|---|---|
